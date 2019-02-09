@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class Utility {
 
-    public int consoleScan(){
+    public Scanner scanner = new Scanner(System.in);
+
+   /* public void consoleScan(){
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Waiting a number: ");
+       *//* System.out.print("Waiting a number: ");
         int number;
         if(scanner.hasNextInt()){
             number = scanner.nextInt();
@@ -17,6 +19,6 @@ public class Utility {
             scanner.next();
             number = consoleScan();
         }
-        return number;
-    }
+        return number;*//*
+    }*/
 }
