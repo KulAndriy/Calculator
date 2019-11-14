@@ -10,7 +10,7 @@ public class InputOperation {
         System.out.println("Please input the operation:");
         operation = scanOperation.scanner.next();
 
-        if (operation.equals("+")) {
+        if (operation.equals("+") || operation.equals("-") || operation.equals("*") || operation.equals("/")) {
             this.operation = operation;
         } else {
             System.out.println("You have entered not valid operation. Please try again. ");
