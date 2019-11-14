@@ -18,11 +18,11 @@ public class CreateAndWriteFile {
         return fileName;
     }
 
-    public void writeDataToFile(int resultToWrite) {
+    public void writeDataToFile(double resultToWrite) {
         try {
             //print writer for writing to a file
             PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(createFileName() + ".txt", true)));
-            out.println("The result of calculation is: " + resultToWrite);
+            out.println("The result of calcPerOperation is: " + resultToWrite);
             out.close();
         } catch (
                 IOException e1) {

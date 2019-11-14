@@ -9,11 +9,10 @@ public class MainApp {
     public static CreateAndWriteFile write = new CreateAndWriteFile();
 
     public static void main(String[] args) {
-        int resultOfCalculation = logic.calculation();
-        System.out.println("The result of calculation is: " + resultOfCalculation);
+        double resultOfCalculation ;
+        resultOfCalculation = logic.runCalculator();
+        System.out.println("The result of calcPerOperation is: " + resultOfCalculation);
 
         write.writeDataToFile(resultOfCalculation);
-
-
     }
 }
